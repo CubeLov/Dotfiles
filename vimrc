@@ -178,3 +178,6 @@ set cindent
 
 " Settings to highlight the current row
 set cursorline
+
+"change word to uppercase
+inoremap <C-u> <esc>gUiwea
