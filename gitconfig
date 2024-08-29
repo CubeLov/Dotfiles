@@ -1,0 +1,25 @@
+[user]
+	name = thefool
+	email = 1357157312@qq.com
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
+
+[color "branch"]
+	current = green
+	remote = yellow
+
+[core]
+	pager = less -FRSX
+
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	fo = fetch origin
+	st = status
+	lg = log --all --graph --decorate --oneline
