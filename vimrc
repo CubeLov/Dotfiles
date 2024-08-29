@@ -13,6 +13,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'dense-analysis/ale'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()			" End Vim-Plug plugin manager configuration
 
@@ -69,7 +71,10 @@ if executable('ag')
 endif
 
 
-
+" ALE
+let g:airline#extensions#ale#enabled = 1
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 
 " Comments in Vimscript start with a `"`.
@@ -163,6 +168,9 @@ set st=4
 
 " Set the number of spaces inserted when the tab key is pressed
 set sts=4
+
+" Set width automatically indented when setting a new line
+set shiftwidth=4
 
 " Set up automatic indentation
 set autoindent
