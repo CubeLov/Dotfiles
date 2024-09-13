@@ -179,5 +179,14 @@ set cindent
 " Settings to highlight the current row
 set cursorline
 
-"change word to uppercase
+" change word to uppercase
 inoremap <C-u> <esc>gUiwea
+
+" available yank from vim to windows 
+map ;y "ay: vs vim-copy<cr>"aP:wq<cr>:call system("/mnt/c/Windows/System32/clip.exe < vim-copy && rm vim-copy")<cr><cr>
+
+" Set movement in insert mode
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
