@@ -186,7 +186,7 @@ inoremap <C-u> <esc>gUiwea
 map ;y "ay: vs vim-copy<cr>"aP:wq<cr>:call system("/mnt/c/Windows/System32/clip.exe < vim-copy && rm vim-copy")<cr><cr>
 
 " Set movement in insert mode
-inoremap <C-h> <Left>
+inoremap <C-b> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
