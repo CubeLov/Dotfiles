@@ -76,6 +76,10 @@ let g:airline#extensions#ale#enabled = 1
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
+" ctags
+set tags=/root/MiniOB/src/observer/tags;
+set autochdir
+set tags=./tags;,tags
 
 " Comments in Vimscript start with a `"`.
 
